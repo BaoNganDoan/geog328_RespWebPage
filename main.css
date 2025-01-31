@@ -1,0 +1,233 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(251, 193, 93);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f6e59a;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #ff4646;
+  color: white;
+}
+
+/* Hide the icon that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Style for page content */
+.content {
+  padding: 14px;
+  font-size: 22px;
+}
+
+/* When the screen is less than 800 pixels wide */
+@media screen and (max-width: 650px) {
+  /* Hide all links, except for the selected tab */
+  .topnav a:not(.active) {
+    display: none;
+  }
+
+  /* Show the icon that should open and close the topnav */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* When the screen is less than 800 pixels wide, if the user clicks on the icon */
+/* the "responsive" class attribute will be added to the topnav by the JavaScript code */
+/* This media query sets the style for the unfolded topnav */
+/* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
+@media screen and (max-width: 650px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Make section counter */
+
+/* Float four columns side by side */
+.counter-column {
+  float: left;
+  width: 24%;
+  padding: 10px 5px;
+}
+
+.counter-row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 650px) {
+  .counter-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.card .fa {
+  font-size: 25px; /* Adjust size only for icons inside the counter cards */
+}
+
+.fa {
+  font-size:50px;}
+
+
+/* Make slideshow gallery */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Style for slideshow images - makes them uniform */
+.mySlides img {
+  width: 100%;
+  height: 500px; /* Adjust as needed */
+  object-fit: cover; /* Ensures consistent zoom without distortion */
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:rgb(251, 193, 93);
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  font-size: 20px;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.thumbnail-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Six columns side by side */
+.thumbnail-column {
+  float: left;
+  width: 16%;
+}
+
+/* Style for thumbnail images */
+.thumbnail-column img {
+  width: 100%;
+  height: 100px; /* Makes all thumbnails uniform */
+  object-fit: cover;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 650px) {
+  .mySlides img {
+    height: 300px; /* Adjust height for mobile screens */
+  }
+  .thumbnail-column img {
+    height: 80px; /* Smaller thumbnails on mobile */
+  }
+}
