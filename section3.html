@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Activities</title>
+
+    <!-- Including the main.css file for styling -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Including the Font Awesome CSS library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Links to different sections -->
+        <a href="index.html">Abstract</a>
+        <a href="section1.html">Fun Facts</a>
+        <a href="section2.html">Destinations</a>
+
+        <!-- Active link pointing to the section3.html page -->
+        <a class="active" href="section3.html">Activities!</a>
+
+        <a href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="https://media.gettyimages.com/id/502993916/photo/halong-bay-vietnam-panorama-at-sunset-with-anchored-ships.jpg?s=612x612&w=0&k=20&c=xabqBdpKE1zRfNTNLvum_Gmp1jIwlg1gWavwGe0Nh1E=" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="https://media.gettyimages.com/id/183284006/photo/sapa-rice-fields.jpg?s=612x612&w=0&k=20&c=XGnHk3QVj4ZjGE5e2PaVyNfpD7OltiIozoB-cXJnao0=" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="https://media.gettyimages.com/id/2158333209/photo/vietnamese-women-selling-fruits-on-floating-market-mekong-river-delta-vietnam.jpg?s=612x612&w=0&k=20&c=uEsSrqVA92vRaJElV6WJ2bS4cSzAF3EdaVqXmrGZbbk=" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="https://media.gettyimages.com/id/1212329346/photo/vietnamese-food-background.jpg?s=612x612&w=0&k=20&c=f9V1vCzf-iMFv4_LLznsxp0X215hSgeB7eJdlFHbE3o=" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="https://media.gettyimages.com/id/138333021/photo/cycling-over-hai-van-pass-vietnam.jpg?s=612x612&w=0&k=20&c=jAXVOKrIcM3a5Ujv8jYDVRXmGnbSZOok9QWDbG15it8=" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="https://media.gettyimages.com/id/1230670111/photo/this-photograph-taken-on-january-18-2021-shows-visitors-in-son-doong-cave-one-of-the-worlds.jpg?s=612x612&w=0&k=20&c=z5Lu-nmFMmNiXoE7Ll4Q4m4ikltz7Y9YyQSBFDXcF2U=" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="thumbnail-row">
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="https://media.gettyimages.com/id/502993916/photo/halong-bay-vietnam-panorama-at-sunset-with-anchored-ships.jpg?s=612x612&w=0&k=20&c=xabqBdpKE1zRfNTNLvum_Gmp1jIwlg1gWavwGe0Nh1E=" style="width:100%" onclick="currentSlide(1)" alt="Ha Long Bay">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="https://media.gettyimages.com/id/183284006/photo/sapa-rice-fields.jpg?s=612x612&w=0&k=20&c=XGnHk3QVj4ZjGE5e2PaVyNfpD7OltiIozoB-cXJnao0=" style="width:100%" onclick="currentSlide(2)" alt="Sapa">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="https://media.gettyimages.com/id/2158333209/photo/vietnamese-women-selling-fruits-on-floating-market-mekong-river-delta-vietnam.jpg?s=612x612&w=0&k=20&c=uEsSrqVA92vRaJElV6WJ2bS4cSzAF3EdaVqXmrGZbbk=" style="width:100%" onclick="currentSlide(3)" alt="Mekong Delta">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="https://media.gettyimages.com/id/1212329346/photo/vietnamese-food-background.jpg?s=612x612&w=0&k=20&c=f9V1vCzf-iMFv4_LLznsxp0X215hSgeB7eJdlFHbE3o=" style="width:100%" onclick="currentSlide(4)" alt="Food">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="https://media.gettyimages.com/id/138333021/photo/cycling-over-hai-van-pass-vietnam.jpg?s=612x612&w=0&k=20&c=jAXVOKrIcM3a5Ujv8jYDVRXmGnbSZOok9QWDbG15it8=" style="width:100%" onclick="currentSlide(5)" alt="Hai Van Pass">
+      </div>
+      <div class="thumbnail-column">
+        <img class="demo cursor" src="https://media.gettyimages.com/id/1230670111/photo/this-photograph-taken-on-january-18-2021-shows-visitors-in-son-doong-cave-one-of-the-worlds.jpg?s=612x612&w=0&k=20&c=z5Lu-nmFMmNiXoE7Ll4Q4m4ikltz7Y9YyQSBFDXcF2U=" style="width:100%" onclick="currentSlide(6)" alt="Son Doong Cave">
+      </div>
+    </div>
+  </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <!-- Section 3 content -->
+        <h2 id="activities">Activities!</h2>
+<p>Travelers can take a boat ride in Ha Long Bay to see its towering limestone islands and clear waters. Trekking in Sapa offers amazing mountain views and a chance to meet local communities. The Mekong Delta shows rural life with its floating markets and green scenery. Food lovers can try local dishes like Pho, Banh Mi, and fresh spring rolls or even join cooking classes. For adventure, motorbike rides along the Hai Van Pass or exploring the giant caves of Phong Nha-Ke Bang National Park are unforgettable experiences.</p>
+    </div>
+
+    <!-- Including the main.js file for JavaScript functionality -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
